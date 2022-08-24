@@ -1,0 +1,20 @@
+<div class="main">
+  <div class="form">
+      <input
+        type="text"
+        placeholder="Enter User Name"
+        [(ngModel)]="User_Name">
+      <mat-error *ngIf="User_Name === '' && submitted_Once">Please fill user name</mat-error>
+      <input
+        type="text"
+        placeholder="Enter Room Name"
+        [(ngModel)]="Room_Name">
+      <mat-error *ngIf="Room_Name === '' && submitted_Once">Please fill Room name</mat-error>
+    <button mat-raised-button (click)="onClick()">
+      Create New Room
+    </button>
+  </div>
+  <div class="error-message" style="display: none;color: red;">
+    cannot enter this room. Room already has 2 members
+  </div>
+</div>

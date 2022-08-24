@@ -1,0 +1,74 @@
+.main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.container1{
+  width: 60%;
+  // border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2{
+  width: 25%;
+}
+
+.chess-board{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.board-pieces{
+  // border: 1px solid rgb(59, 57, 57);
+  border-right: 1px solid rgba(150,116,86,255);
+  box-shadow: #835f42;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    display: none;
+  }
+}
+
+.black{
+  background-color: #769656;
+  background-color: #835f42;
+  background-color: rgba(125,90,64,255);
+  background-color: rgba(118,85,60,255);
+}
+
+.white{
+  background-color: white;
+  background-color: rgb(209, 165, 45);
+  background-color: rgba(190,163,128,255);
+  // opacity: 0.5;
+  // background-color: #eeeed2;
+  // background-color: #fccc74;
+}
+
+.Possible_Square{
+  // background-color: aquamarine;
+  // background-color: rgb(255, 156, 17);
+  background-color: rgb(151, 151, 127);
+  background-color: rgba(150,116,86,255);
+  border-right: 1px solid rgba(150,116,86,255);
+  box-shadow: #835f42;
+}
+img{
+  cursor: pointer;
+}
